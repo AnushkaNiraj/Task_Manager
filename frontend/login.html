@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/extras.css">
+</head>
+<body>
+    <div class="auth_wrapper">
+        <h1 class="auth_title">TASK MANAGER</h1>
+        <form id="authForm" class="auth_box">
+            <h2 id="authHeading">Login</h2>
+            <input type="text" id="authName" placeholder="Your name" autocomplete="name">
+            <input type="email" id="authEmail" placeholder="Email" autocomplete="email">
+            <input type="password" id="authPassword" placeholder="Password" autocomplete="current-password">
+            <p id="authError" class="auth_error"></p>
+            <button type="submit" id="authSubmit">Login</button>
+            <p class="auth_switch">
+                <span id="authSwitchText">New here?</span>
+                <a href="#" id="authSwitch">Create an account</a>
+            </p>
+        </form>
+    </div>
+    <script src="js/api.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

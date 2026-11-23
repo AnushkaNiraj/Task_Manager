@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/extras.css">
+</head>
+<body>
+    <div class="container">
+
+    <aside class="sidebar">
+            <h1 id="username">Welcome </h1>
+            <button id="logout">LOGOUT</button>
+    </aside>
+    
+    <main class="main_content">
+
+    <h1>GREETINGS!!</h1>
+    <h1>MANAGE YOUR TASKS...</h1>
+
+    <div id="up">
+    <div class="showPending">
+        <h3>Due Today</h3>
+        <span id="countDueToday">0</span>
+    </div>
+    <div class="showPending">
+        <h3>Upcoming</h3>
+        <span id="countUpcoming">0</span>
+    </div>
+    <div class="showPending">
+        <h3>Completed</h3>
+        <span id="countCompleted">0</span>
+    </div>
+    <div class="showPending">
+        <h3>Pending</h3>
+        <span id="countPending">0</span>
+    </div>
+</div>
+
+    <div id="down">
+    <div class="scroll" id="scrollPending">
+        <div class="header">
+        <h3>Pending</h3>
+        <span class="arrow">▼</span>
+        </div>
+        <ul class="list"></ul>
+    </div>
+    <div class="scroll" id="scrollDue">
+        <div class="header">
+        <h3>Due Today</h3>
+        <span class="arrow">▼</span>
+        </div>
+        <ul class="list"></ul>
+    </div>
+    <div class="scroll" id="scrollUpcoming">
+        <div class="header">
+        <h3>Upcoming</h3>
+        <span class="arrow">▼</span>
+        </div>
+        <ul class="list"></ul>
+
+    </div>
+    <div class="scroll" id="scrollComplete">
+        <div class="header">
+        <h3>Completed</h3>
+        <span class="arrow">▼</span>
+        </div>
+        <ul class="list"></ul>
+    </div>
+</div>
+
+    <button id="add">Add Task</button>
+    <button id="reset">Reset</button>
+    
+    <div id="taskForm">
+    <input type="text" id="taskText" placeholder="Enter task">
+    <input type="date" id="dueDate">
+    <select id="category">
+        <option value="">Select Category</option>
+        <option value="DSA">DSA</option>
+        <option value="Web Development">Web Development</option>
+        <option value="College">College</option>
+        <option value="Personal">Personal</option>
+    </select>
+    <button id="saveTask">Save Task</button>
+</div>
+    </main>
+    </div>
+    <script src="js/api.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
